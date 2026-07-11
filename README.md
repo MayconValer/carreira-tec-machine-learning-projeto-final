@@ -57,3 +57,12 @@ docs/
 - Carregamento da base
 - Verificação inicial
 - Inspeção das colunas
+
+## Desenvolvimento
+
+### ✔ Coleta de Dados
+
+- Importação das bibliotecas
+- Carregamento da base
+- Inspeção inicial
+- Auditoria técnica
