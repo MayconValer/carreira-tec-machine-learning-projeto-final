@@ -48,3 +48,12 @@ docs/
 - Scikit-Learn
 - Git
 - GitHub
+
+## Status do Desenvolvimento
+
+### ✔ Etapa 1 - Coleta de Dados
+
+- Importação das bibliotecas
+- Carregamento da base
+- Verificação inicial
+- Inspeção das colunas
