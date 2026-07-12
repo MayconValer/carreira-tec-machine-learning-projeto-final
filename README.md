@@ -77,3 +77,22 @@ Concluída
 
 - Investigação de registros duplicados
 - Investigação de valores ausentes
+
+## Status do desenvolvimento
+
+- [x] Estrutura inicial do projeto
+- [x] Configuração do ambiente Python
+- [x] Coleta e carregamento dos dados
+- [x] Auditoria técnica inicial
+- [x] Investigação de valores ausentes
+- [x] Investigação de registros duplicados
+- [x] Análise descritiva e estatística
+- [ ] Análise visual das distribuições
+- [ ] Análise de outliers
+- [ ] Análise da variável alvo
+- [ ] Mapa de correlação
+- [ ] Tratamento e limpeza
+- [ ] Divisão dos dados
+- [ ] Pré-processamento
+- [ ] Treinamento
+- [ ] Avaliação e validação
