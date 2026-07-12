@@ -66,3 +66,14 @@ docs/
 - Carregamento da base
 - Inspeção inicial
 - Auditoria técnica
+
+## Desenvolvimento
+
+### ✔ Coleta de Dados
+
+Concluída
+
+### 🚧 Limpeza Estrutural e Exploração
+
+- Investigação de registros duplicados
+- Investigação de valores ausentes
