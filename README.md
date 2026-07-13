@@ -262,3 +262,32 @@ Foi utilizado o parâmetro `stratify=y` para preservar a proporção das classes
 As variáveis categóricas foram transformadas com One-Hot Encoding.
 
 O codificador foi ajustado somente sobre os dados de treinamento, enquanto o conjunto de teste foi apenas transformado, prevenindo Data Leakage.
+
+## Status do desenvolvimento
+
+- [x] Coleta de dados
+- [x] Análise Exploratória de Dados
+- [x] Criação da base de trabalho
+- [x] Remoção de registros duplicados
+- [x] Reavaliação dos valores ausentes
+- [x] Imputação dos valores ausentes
+- [x] Tratamento de inconsistências
+- [x] Tratamento de outliers
+- [x] Feature Engineering
+- [x] Criação da variável `comprometimento_renda`
+- [x] Validação de divisão por zero
+- [x] Análise de redundância com `loan_percent_income`
+- [x]  Definição das variáveis preditoras
+- [x] Divisão estratificada dos dados
+- [x] Identificação das variáveis categóricas e numéricas
+- [x] One-Hot Encoding ajustado somente no treino
+- [x] Transformação segura do conjunto de teste
+- [x] One-Hot Encoding
+- [x] Balanceamento com SMOTE apenas no treino
+- [x] Preservação da distribuição original do teste
+- [ ] Escalonamento seguro para o KNN
+- [ ] Preparação dos dados sem escalonamento para a Árvore
+
+O desbalanceamento da variável alvo foi tratado com SMOTE exclusivamente no conjunto de treinamento.
+
+O conjunto de teste permaneceu inalterado para preservar a distribuição real das classes e evitar Data Leakage.
