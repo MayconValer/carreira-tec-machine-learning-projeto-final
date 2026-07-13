@@ -131,8 +131,9 @@ Foi construída uma matriz de correlação de Pearson para investigar relações
 - [x] Criação da base de trabalho
 - [x] Remoção de registros duplicados
 - [x] Reavaliação dos valores ausentes
-- [ ] Imputação dos valores ausentes
-- [ ] Tratamento de inconsistências
+- [x] Imputação dos valores ausentes
+- [x] Tratamento de inconsistências
+Os valores ausentes de `person_emp_length` e `loan_int_rate` foram imputados com a mediana, pois ambas as variáveis apresentaram assimetria e sensibilidade potencial a valores extremos.
 - [ ] Tratamento de outliers
 - [ ] Feature Engineering
 - [ ] Divisão dos dados
