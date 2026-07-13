@@ -353,3 +353,33 @@ A Árvore de Decisão foi treinada utilizando os dados balanceados sem escalonam
 - [ ] Otimização da Árvore
 - [ ] Diagnóstico de Overfitting
 - [ ] Avaliação Final
+
+## Status do desenvolvimento
+
+- [x] Coleta de dados
+- [x] Análise Exploratória de Dados
+- [x] Criação da base de trabalho
+- [x] Remoção de registros duplicados
+- [x] Reavaliação dos valores ausentes
+- [x] Imputação dos valores ausentes
+- [x] Tratamento de inconsistências
+- [x] Tratamento de outliers
+- [x] Feature Engineering
+- [x] Criação da variável `comprometimento_renda`
+- [x] Validação de divisão por zero
+- [x] Análise de redundância com `loan_percent_income`
+- [x]  Definição das variáveis preditoras
+- [x] Divisão estratificada dos dados
+- [x] Identificação das variáveis categóricas e numéricas
+- [x] One-Hot Encoding ajustado somente no treino
+- [x] Transformação segura do conjunto de teste
+- [x] One-Hot Encoding
+- [x] Balanceamento com SMOTE apenas no treino
+- [x] Preservação da distribuição original do teste
+- [x] Escalonamento seguro para KNN
+- [x] Base preparada para Árvore de Decisão
+- [x] Pré-processamento
+- [x] Início da Modelagem
+- [x] Primeiro treinamento do KNN
+- [ ] Comparação entre diferentes valores de K
+- [ ] Diagnóstico de Overfitting
