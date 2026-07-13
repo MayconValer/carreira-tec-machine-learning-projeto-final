@@ -117,3 +117,9 @@ Foram analisadas visualmente as distribuições das variáveis contínuas, permi
 - [x] Análise de outliers com boxplots
 - [x] Identificação de outliers pelo método IQR
 - [ ] Decisão final sobre tratamento dos outliers
+
+## Desenvolvimento
+
+✔ Correlação entre Variáveis
+
+Foi construída uma matriz de correlação de Pearson para investigar relações lineares entre as variáveis numéricas e identificar possíveis atributos com maior influência sobre a variável alvo.
