@@ -163,3 +163,23 @@ Foram removidos registros com idades implausíveis e tempos de emprego incompat�
 Os outliers financeiros foram mantidos provisoriamente, pois podem representar operações legítimas e relevantes para a predição de inadimplência.
 
 
+## Status do desenvolvimento
+
+- [x] Coleta de dados
+- [x] Análise Exploratória de Dados
+- [x] Criação da base de trabalho
+- [x] Remoção de registros duplicados
+- [x] Reavaliação dos valores ausentes
+- [x] Imputação dos valores ausentes
+- [x] Tratamento de inconsistências
+- [x] Tratamento de outliers
+- [ ] Feature Engineering
+- [ ] Divisão dos dados
+- [ ] Pré-processamento
+- [ ] Treinamento
+- [ ] Avaliação e validação
+
+Os outliers financeiros foram mantidos por representarem situações plausíveis no contexto de crédito. Apenas inconsistências cadastrais foram removidas, preservando informações relevantes para os modelos de Machine Learning.
+
+
+
