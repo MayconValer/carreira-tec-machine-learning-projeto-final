@@ -123,3 +123,19 @@ Foram analisadas visualmente as distribuições das variáveis contínuas, permi
 ✔ Correlação entre Variáveis
 
 Foi construída uma matriz de correlação de Pearson para investigar relações lineares entre as variáveis numéricas e identificar possíveis atributos com maior influência sobre a variável alvo.
+
+## Status do desenvolvimento
+
+- [x] Coleta de dados
+- [x] Análise Exploratória de Dados
+- [x] Criação da base de trabalho
+- [x] Remoção de registros duplicados
+- [x] Reavaliação dos valores ausentes
+- [ ] Imputação dos valores ausentes
+- [ ] Tratamento de inconsistências
+- [ ] Tratamento de outliers
+- [ ] Feature Engineering
+- [ ] Divisão dos dados
+- [ ] Pré-processamento
+- [ ] Treinamento
+- [ ] Avaliação e validação
