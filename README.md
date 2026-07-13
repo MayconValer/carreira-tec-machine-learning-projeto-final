@@ -133,10 +133,33 @@ Foi construída uma matriz de correlação de Pearson para investigar relações
 - [x] Reavaliação dos valores ausentes
 - [x] Imputação dos valores ausentes
 - [x] Tratamento de inconsistências
-Os valores ausentes de `person_emp_length` e `loan_int_rate` foram imputados com a mediana, pois ambas as variáveis apresentaram assimetria e sensibilidade potencial a valores extremos.
 - [ ] Tratamento de outliers
 - [ ] Feature Engineering
 - [ ] Divisão dos dados
 - [ ] Pré-processamento
 - [ ] Treinamento
 - [ ] Avaliação e validação
+
+Os valores ausentes de `person_emp_length` e `loan_int_rate` foram imputados com a mediana, pois ambas as variáveis apresentaram assimetria e sensibilidade potencial a valores extremos.
+
+## Status do desenvolvimento
+
+- [x] Coleta de dados
+- [x] Análise Exploratória de Dados
+- [x] Criação da base de trabalho
+- [x] Remoção de registros duplicados
+- [x] Reavaliação dos valores ausentes
+- [x] Imputação dos valores ausentes
+- [x] Tratamento de inconsistências
+- [x] Tratamento de outliers
+- [ ] Feature Engineering
+- [ ] Divisão dos dados
+- [ ] Pré-processamento
+- [ ] Treinamento
+- [ ] Avaliação e validação
+
+Foram removidos registros com idades implausíveis e tempos de emprego incompatíveis com a idade do cliente.
+
+Os outliers financeiros foram mantidos provisoriamente, pois podem representar operações legítimas e relevantes para a predição de inadimplência.
+
+
