@@ -104,3 +104,11 @@ Concluída
 ✔ Distribuição da Variável Alvo
 
 🚧 Distribuições Numéricas
+
+## Desenvolvimento
+
+### ✔ Distribuição da Variável Alvo
+
+### ✔ Histogramas das Variáveis Numéricas
+
+Foram analisadas visualmente as distribuições das variáveis contínuas, permitindo identificar possíveis assimetrias e indícios de valores extremos que orientarão as próximas etapas do tratamento dos dados.
