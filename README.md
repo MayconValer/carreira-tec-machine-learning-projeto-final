@@ -207,3 +207,29 @@ A nova variável será priorizada em relação à coluna original `loan_percent_
 - [ ] Pré-processamento
 - [ ] Treinamento
 - [ ] Avaliação e validação
+
+## Status do desenvolvimento
+
+- [x] Coleta de dados
+- [x] Análise Exploratória de Dados
+- [x] Criação da base de trabalho
+- [x] Remoção de registros duplicados
+- [x] Reavaliação dos valores ausentes
+- [x] Imputação dos valores ausentes
+- [x] Tratamento de inconsistências
+- [x] Tratamento de outliers
+- [x] Feature Engineering
+- [x] Criação da variável `comprometimento_renda`
+- [x] Validação de divisão por zero
+- [x] Análise de redundância com `loan_percent_income`
+- [x]  Definição das variáveis preditoras
+- [x]  Divisão dos dados
+- [ ] Pré-processamento
+- [ ] Treinamento
+- [ ] Avaliação e validação
+
+## Divisão dos dados
+
+A base foi dividida em 80% para treinamento e 20% para teste.
+
+Foi utilizado o parâmetro `stratify=y` para preservar a proporção das classes e evitar que um dos conjuntos recebesse uma distribuição diferente da base original.
