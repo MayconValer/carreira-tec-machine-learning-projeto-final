@@ -181,5 +181,29 @@ Os outliers financeiros foram mantidos provisoriamente, pois podem representar o
 
 Os outliers financeiros foram mantidos por representarem situações plausíveis no contexto de crédito. Apenas inconsistências cadastrais foram removidas, preservando informações relevantes para os modelos de Machine Learning.
 
+## Nova variável criada
+
+Durante a etapa de Feature Engineering, foi criada a variável `comprometimento_renda`, que representa o percentual da renda anual comprometido pelo empréstimo solicitado.
+
+A nova variável será priorizada em relação à coluna original `loan_percent_income` para evitar redundância de informação durante a modelagem.
 
 
+## Status do desenvolvimento
+
+- [x] Coleta de dados
+- [x] Análise Exploratória de Dados
+- [x] Criação da base de trabalho
+- [x] Remoção de registros duplicados
+- [x] Reavaliação dos valores ausentes
+- [x] Imputação dos valores ausentes
+- [x] Tratamento de inconsistências
+- [x] Tratamento de outliers
+- [x] Feature Engineering
+- [x] Criação da variável `comprometimento_renda`
+- [x] Validação de divisão por zero
+- [x] Análise de redundância com `loan_percent_income`
+- [ ] Definição das variáveis preditoras
+- [ ] Divisão dos dados
+- [ ] Pré-processamento
+- [ ] Treinamento
+- [ ] Avaliação e validação
