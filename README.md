@@ -96,3 +96,11 @@ Concluída
 - [ ] Pré-processamento
 - [ ] Treinamento
 - [ ] Avaliação e validação
+
+## Status
+
+✔ Estatística Descritiva
+
+✔ Distribuição da Variável Alvo
+
+🚧 Distribuições Numéricas
