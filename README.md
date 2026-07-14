@@ -389,5 +389,7 @@ A Árvore de Decisão foi treinada utilizando os dados balanceados sem escalonam
 - [x] Diagnóstico de Overfitting
 - [x] Comparação entre modelos
 - [x] Seleção automática das melhores configurações
-- [ ] Classification Report
-- [ ] Matriz de Confusão
+- [x] Classification Report
+- [x] Matrizes de Confusão
+- [x] Interpretação dos erros
+- [ ] Veredito Final
