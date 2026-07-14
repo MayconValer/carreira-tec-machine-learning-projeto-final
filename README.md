@@ -387,4 +387,7 @@ A Árvore de Decisão foi treinada utilizando os dados balanceados sem escalonam
 - [x] Otimização do KNN
 - [x] Otimização da Árvore
 - [x] Diagnóstico de Overfitting
-- [ ] Comparação Final dos Modelos
+- [x] Comparação entre modelos
+- [x] Seleção automática das melhores configurações
+- [ ] Classification Report
+- [ ] Matriz de Confusão
