@@ -392,4 +392,5 @@ A Árvore de Decisão foi treinada utilizando os dados balanceados sem escalonam
 - [x] Classification Report
 - [x] Matrizes de Confusão
 - [x] Interpretação dos erros
-- [ ] Veredito Final
+- [x] Avaliação
+- [x] Veredito Executivo
