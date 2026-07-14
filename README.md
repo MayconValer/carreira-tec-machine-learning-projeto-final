@@ -381,5 +381,7 @@ A Árvore de Decisão foi treinada utilizando os dados balanceados sem escalonam
 - [x] Pré-processamento
 - [x] Início da Modelagem
 - [x] Primeiro treinamento do KNN
-- [ ] Comparação entre diferentes valores de K
-- [ ] Diagnóstico de Overfitting
+- [x] Otimização do KNN
+- [x] Comparação entre diferentes valores de K
+- [x] Diagnóstico inicial de Overfitting
+- [ ] Modelagem da Árvore de Decisão
