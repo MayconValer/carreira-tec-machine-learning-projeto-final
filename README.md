@@ -1,44 +1,65 @@
-# Projeto Final - Machine Learning e Visão Computacional
+# Projeto Final — Machine Learning e Visão Computacional
 
-## Predição de Risco de Crédito
+Pipeline completo para previsão de risco de crédito utilizando técnicas de Ciência de Dados, Engenharia de Atributos e algoritmos clássicos de Machine Learning.
 
-### Objetivo
+## Objetivo
 
-Desenvolver um modelo de Machine Learning capaz de prever a inadimplência de clientes de uma instituição financeira.
+Desenvolver um pipeline completo de Machine Learning capaz de prever a inadimplência de clientes em solicitações de crédito, aplicando boas práticas de preparação de dados, engenharia de atributos, modelagem, otimização de hiperparâmetros e avaliação estatística.
 
----
+O projeto foi desenvolvido como parte da Situação de Aprendizagem do módulo de Machine Learning e Visão Computacional.
 
-## Pipeline do Projeto
+## Problema de Negócio
 
-- Coleta de Dados
-- Limpeza Estrutural e Exploração
-- Divisão dos Dados
-- Pré-processamento
-- Treinamento do Modelo
-- Avaliação e Validação
+Instituições financeiras precisam reduzir perdas provocadas pela concessão de crédito para clientes inadimplentes.
 
----
+O objetivo deste projeto é desenvolver um modelo preditivo capaz de classificar clientes como:
+
+- Adimplentes (loan_status = 0)
+- Inadimplentes (loan_status = 1)
+
+A solução proposta auxilia o banco na tomada de decisão durante a análise de crédito, reduzindo riscos financeiros e aumentando a eficiência do processo.
+
+## Dataset
+
+Base utilizada:
+
+**Loan Risk Dataset**
+
+Principais informações:
+
+- Dados financeiros dos clientes
+- Informações pessoais
+- Histórico de crédito
+- Características do empréstimo
+- Status final do pagamento
 
 ## Estrutura do Projeto
 
-```text
-data/
+carreira-tec-machine-learning-projeto-final/
+
 │
-├── raw/
-├── processed/
 
-notebooks/
+├── data/
 
-src/
+├── docs/
 
-models/
+├── images/
 
-images/
+├── models/
 
-docs/
-```
+├── notebooks/
 
-### Tecnologias
+│   └── projeto_final.ipynb
+
+├── src/
+
+├── README.md
+
+├── requirements.txt
+
+└── LICENSE
+
+## Tecnologias Utilizadas
 
 - Python
 - Pandas
@@ -46,313 +67,109 @@ docs/
 - Matplotlib
 - Seaborn
 - Scikit-Learn
+- Imbalanced-Learn
+- Jupyter Notebook
+- VS Code
 - Git
 - GitHub
 
-## Status do Desenvolvimento
+## Pipeline de Machine Learning
 
-### ✔ Etapa 1 - Coleta de Dados
+O desenvolvimento seguiu o fluxo:
 
-- Importação das bibliotecas
-- Carregamento da base
-- Verificação inicial
-- Inspeção das colunas
+1. Coleta dos Dados
 
-## Desenvolvimento
+2. Limpeza Estrutural e Exploração
 
-### ✔ Coleta de Dados
+3. Divisão dos Dados
 
-- Importação das bibliotecas
-- Carregamento da base
-- Inspeção inicial
-- Auditoria técnica
+4. Pré-processamento
 
-## Desenvolvimento
+5. Treinamento dos Modelos
 
-### ✔ Coleta de Dados
+6. Avaliação e Validação
 
-Concluída
+## Dicionário de Dados
 
-### 🚧 Limpeza Estrutural e Exploração
+| Coluna | Descrição |
+|---------|-----------|
+| person_age | Idade do cliente |
+| person_income | Renda anual |
+| person_home_ownership | Situação do imóvel |
+| person_emp_length | Tempo de emprego |
+| loan_amnt | Valor do empréstimo |
+| loan_int_rate | Taxa de juros |
+| loan_intent | Finalidade do empréstimo |
+| loan_grade | Classificação do empréstimo |
+| cb_person_cred_hist_length | Tempo de histórico de crédito |
+| loan_status | Variável alvo |
+| comprometimento_renda | Percentual da renda comprometido pelo empréstimo (variável criada) |
 
-- Investigação de registros duplicados
-- Investigação de valores ausentes
+## Metodologia
 
-## Status do desenvolvimento
+Durante o desenvolvimento foram executadas as seguintes etapas:
 
-- [x] Estrutura inicial do projeto
-- [x] Configuração do ambiente Python
-- [x] Coleta e carregamento dos dados
-- [x] Auditoria técnica inicial
-- [x] Investigação de valores ausentes
-- [x] Investigação de registros duplicados
-- [x] Análise descritiva e estatística
-- [ ] Análise visual das distribuições
-- [ ] Análise de outliers
-- [ ] Análise da variável alvo
-- [ ] Mapa de correlação
-- [ ] Tratamento e limpeza
-- [ ] Divisão dos dados
-- [ ] Pré-processamento
-- [ ] Treinamento
-- [ ] Avaliação e validação
+- Análise Exploratória de Dados (EDA)
+- Tratamento de valores ausentes
+- Remoção de registros duplicados
+- Investigação de outliers
+- Feature Engineering
+- One-Hot Encoding
+- Divisão estratificada em treino e teste
+- Balanceamento com SMOTE
+- Escalonamento com StandardScaler para o KNN
+- Treinamento dos modelos
+- Otimização de hiperparâmetros
+- Avaliação com Classification Report
+- Matrizes de Confusão
+- Análise de impacto de negócio
 
-## Status
+## Resultados Obtidos
 
-✔ Estatística Descritiva
+### Melhor KNN
 
-✔ Distribuição da Variável Alvo
+- Parâmetro: K = 9
+- Accuracy: 88,32%
 
-🚧 Distribuições Numéricas
+### Melhor Árvore
 
-## Desenvolvimento
+- Profundidade: 7
+- Accuracy: 92,59%
 
-### ✔ Distribuição da Variável Alvo
+## Modelo Selecionado
 
-### ✔ Histogramas das Variáveis Numéricas
+Após a comparação entre os algoritmos avaliados, a Árvore de Decisão com profundidade máxima igual a 7 foi selecionada como modelo final.
 
-Foram analisadas visualmente as distribuições das variáveis contínuas, permitindo identificar possíveis assimetrias e indícios de valores extremos que orientarão as próximas etapas do tratamento dos dados.
+Principais motivos:
 
-- [x] Análise visual das distribuições
-- [x] Análise de outliers com boxplots
-- [x] Identificação de outliers pelo método IQR
-- [ ] Decisão final sobre tratamento dos outliers
+- maior acurácia no conjunto de teste;
+- excelente capacidade de generalização;
+- menor diferença entre treino e teste;
+- menor número de falsos positivos;
+- menor número de falsos negativos.
 
-## Desenvolvimento
+Sob a ótica do negócio, apresentou menor risco financeiro para a instituição bancária.
 
-✔ Correlação entre Variáveis
+## Como executar
 
-Foi construída uma matriz de correlação de Pearson para investigar relações lineares entre as variáveis numéricas e identificar possíveis atributos com maior influência sobre a variável alvo.
+Clone o repositório:
 
-## Status do desenvolvimento
+git clone <https://github.com/MayconValer/carreira-tec-machine-learning-projeto-final.git>
 
-- [x] Coleta de dados
-- [x] Análise Exploratória de Dados
-- [x] Criação da base de trabalho
-- [x] Remoção de registros duplicados
-- [x] Reavaliação dos valores ausentes
-- [x] Imputação dos valores ausentes
-- [x] Tratamento de inconsistências
-- [ ] Tratamento de outliers
-- [ ] Feature Engineering
-- [ ] Divisão dos dados
-- [ ] Pré-processamento
-- [ ] Treinamento
-- [ ] Avaliação e validação
+Intale as dependencias:
 
-Os valores ausentes de `person_emp_length` e `loan_int_rate` foram imputados com a mediana, pois ambas as variáveis apresentaram assimetria e sensibilidade potencial a valores extremos.
+pip install -r requirements.txt
 
-## Status do desenvolvimento
+Abra:
 
-- [x] Coleta de dados
-- [x] Análise Exploratória de Dados
-- [x] Criação da base de trabalho
-- [x] Remoção de registros duplicados
-- [x] Reavaliação dos valores ausentes
-- [x] Imputação dos valores ausentes
-- [x] Tratamento de inconsistências
-- [x] Tratamento de outliers
-- [ ] Feature Engineering
-- [ ] Divisão dos dados
-- [ ] Pré-processamento
-- [ ] Treinamento
-- [ ] Avaliação e validação
+notebooks/projeto_final.ipynb
 
-Foram removidos registros com idades implausíveis e tempos de emprego incompatíveis com a idade do cliente.
-
-Os outliers financeiros foram mantidos provisoriamente, pois podem representar operações legítimas e relevantes para a predição de inadimplência.
+Execute todas as células na ordem apresentada.
 
 
-## Status do desenvolvimento
+---
 
-- [x] Coleta de dados
-- [x] Análise Exploratória de Dados
-- [x] Criação da base de trabalho
-- [x] Remoção de registros duplicados
-- [x] Reavaliação dos valores ausentes
-- [x] Imputação dos valores ausentes
-- [x] Tratamento de inconsistências
-- [x] Tratamento de outliers
-- [ ] Feature Engineering
-- [ ] Divisão dos dados
-- [ ] Pré-processamento
-- [ ] Treinamento
-- [ ] Avaliação e validação
-
-Os outliers financeiros foram mantidos por representarem situações plausíveis no contexto de crédito. Apenas inconsistências cadastrais foram removidas, preservando informações relevantes para os modelos de Machine Learning.
-
-## Nova variável criada
-
-Durante a etapa de Feature Engineering, foi criada a variável `comprometimento_renda`, que representa o percentual da renda anual comprometido pelo empréstimo solicitado.
-
-A nova variável será priorizada em relação à coluna original `loan_percent_income` para evitar redundância de informação durante a modelagem.
-
-
-## Status do desenvolvimento
-
-- [x] Coleta de dados
-- [x] Análise Exploratória de Dados
-- [x] Criação da base de trabalho
-- [x] Remoção de registros duplicados
-- [x] Reavaliação dos valores ausentes
-- [x] Imputação dos valores ausentes
-- [x] Tratamento de inconsistências
-- [x] Tratamento de outliers
-- [x] Feature Engineering
-- [x] Criação da variável `comprometimento_renda`
-- [x] Validação de divisão por zero
-- [x] Análise de redundância com `loan_percent_income`
-- [ ] Definição das variáveis preditoras
-- [ ] Divisão dos dados
-- [ ] Pré-processamento
-- [ ] Treinamento
-- [ ] Avaliação e validação
-
-## Status do desenvolvimento
-
-- [x] Coleta de dados
-- [x] Análise Exploratória de Dados
-- [x] Criação da base de trabalho
-- [x] Remoção de registros duplicados
-- [x] Reavaliação dos valores ausentes
-- [x] Imputação dos valores ausentes
-- [x] Tratamento de inconsistências
-- [x] Tratamento de outliers
-- [x] Feature Engineering
-- [x] Criação da variável `comprometimento_renda`
-- [x] Validação de divisão por zero
-- [x] Análise de redundância com `loan_percent_income`
-- [x]  Definição das variáveis preditoras
-- [x]  Divisão dos dados
-- [ ] Pré-processamento
-- [ ] Treinamento
-- [ ] Avaliação e validação
-
-## Divisão dos dados
-
-A base foi dividida em 80% para treinamento e 20% para teste.
-
-Foi utilizado o parâmetro `stratify=y` para preservar a proporção das classes e evitar que um dos conjuntos recebesse uma distribuição diferente da base original.
-
-## Status do desenvolvimento
-
-- [x] Coleta de dados
-- [x] Análise Exploratória de Dados
-- [x] Criação da base de trabalho
-- [x] Remoção de registros duplicados
-- [x] Reavaliação dos valores ausentes
-- [x] Imputação dos valores ausentes
-- [x] Tratamento de inconsistências
-- [x] Tratamento de outliers
-- [x] Feature Engineering
-- [x] Criação da variável `comprometimento_renda`
-- [x] Validação de divisão por zero
-- [x] Análise de redundância com `loan_percent_income`
-- [x]  Definição das variáveis preditoras
-- [x] Divisão estratificada dos dados
-- [x] Identificação das variáveis categóricas e numéricas
-- [x] One-Hot Encoding ajustado somente no treino
-- [x] Transformação segura do conjunto de teste
-- [ ] Balanceamento com SMOTE apenas no treino
-- [ ] Escalonamento das variáveis contínuas para o KNN
-
-
-## Pré-processamento
-
-As variáveis categóricas foram transformadas com One-Hot Encoding.
-
-O codificador foi ajustado somente sobre os dados de treinamento, enquanto o conjunto de teste foi apenas transformado, prevenindo Data Leakage.
-
-## Status do desenvolvimento
-
-- [x] Coleta de dados
-- [x] Análise Exploratória de Dados
-- [x] Criação da base de trabalho
-- [x] Remoção de registros duplicados
-- [x] Reavaliação dos valores ausentes
-- [x] Imputação dos valores ausentes
-- [x] Tratamento de inconsistências
-- [x] Tratamento de outliers
-- [x] Feature Engineering
-- [x] Criação da variável `comprometimento_renda`
-- [x] Validação de divisão por zero
-- [x] Análise de redundância com `loan_percent_income`
-- [x]  Definição das variáveis preditoras
-- [x] Divisão estratificada dos dados
-- [x] Identificação das variáveis categóricas e numéricas
-- [x] One-Hot Encoding ajustado somente no treino
-- [x] Transformação segura do conjunto de teste
-- [x] One-Hot Encoding
-- [x] Balanceamento com SMOTE apenas no treino
-- [x] Preservação da distribuição original do teste
-- [ ] Escalonamento seguro para o KNN
-- [ ] Preparação dos dados sem escalonamento para a Árvore
-
-O desbalanceamento da variável alvo foi tratado com SMOTE exclusivamente no conjunto de treinamento.
-
-O conjunto de teste permaneceu inalterado para preservar a distribuição real das classes e evitar Data Leakage.
-
-
-## Status do desenvolvimento
-
-- [x] Coleta de dados
-- [x] Análise Exploratória de Dados
-- [x] Criação da base de trabalho
-- [x] Remoção de registros duplicados
-- [x] Reavaliação dos valores ausentes
-- [x] Imputação dos valores ausentes
-- [x] Tratamento de inconsistências
-- [x] Tratamento de outliers
-- [x] Feature Engineering
-- [x] Criação da variável `comprometimento_renda`
-- [x] Validação de divisão por zero
-- [x] Análise de redundância com `loan_percent_income`
-- [x]  Definição das variáveis preditoras
-- [x] Divisão estratificada dos dados
-- [x] Identificação das variáveis categóricas e numéricas
-- [x] One-Hot Encoding ajustado somente no treino
-- [x] Transformação segura do conjunto de teste
-- [x] One-Hot Encoding
-- [x] Balanceamento com SMOTE apenas no treino
-- [x] Preservação da distribuição original do teste
-- [x] Escalonamento seguro para KNN
-- [x] Base preparada para Árvore de Decisão
-- [ ] Modelagem
-
-O StandardScaler foi aplicado exclusivamente ao conjunto destinado ao algoritmo KNN.
-
-A Árvore de Decisão foi treinada utilizando os dados balanceados sem escalonamento, conforme recomendado para esse tipo de algoritmo.
-
-## Status do desenvolvimento
-
-- [x] Coleta de dados
-- [x] Análise Exploratória de Dados
-- [x] Criação da base de trabalho
-- [x] Remoção de registros duplicados
-- [x] Reavaliação dos valores ausentes
-- [x] Imputação dos valores ausentes
-- [x] Tratamento de inconsistências
-- [x] Tratamento de outliers
-- [x] Feature Engineering
-- [x] Criação da variável `comprometimento_renda`
-- [x] Validação de divisão por zero
-- [x] Análise de redundância com `loan_percent_income`
-- [x]  Definição das variáveis preditoras
-- [x] Divisão estratificada dos dados
-- [x] Identificação das variáveis categóricas e numéricas
-- [x] One-Hot Encoding ajustado somente no treino
-- [x] Transformação segura do conjunto de teste
-- [x] One-Hot Encoding
-- [x] Balanceamento com SMOTE apenas no treino
-- [x] Preservação da distribuição original do teste
-- [x] Escalonamento seguro para KNN
-- [x] Base preparada para Árvore de Decisão
-- [x] Pré-processamento
-- [x] Início da Modelagem
-- [ ] Otimização do KNN
-- [ ] Otimização da Árvore
-- [ ] Diagnóstico de Overfitting
-- [ ] Avaliação Final
+# 13. Histórico do Projeto
 
 ## Status do desenvolvimento
 
@@ -394,3 +211,31 @@ A Árvore de Decisão foi treinada utilizando os dados balanceados sem escalonam
 - [x] Interpretação dos erros
 - [x] Avaliação
 - [x] Veredito Executivo
+
+
+## Versionamento
+
+O desenvolvimento foi realizado utilizando Git Flow simplificado.
+
+Branches utilizadas:
+
+- main
+- fase/coleta-dados
+- fase/eda
+- fase/data-prep
+- fase/feature-engineering
+- fase/divisao-dados
+- fase/pre-processamento
+- fase/modelagem
+- fase/documentacao-final
+
+## Autor
+
+Maycon Diego Valer
+
+Projeto desenvolvido para a disciplina:
+
+Machine Learning e Visão Computacional
+
+Carreira Tech
+
