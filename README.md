@@ -81,13 +81,19 @@ O desenvolvimento seguiu o fluxo:
 
 2. Limpeza Estrutural e Exploração
 
-3. Divisão dos Dados
+3. Tratamento e Limpeza dos Dados
 
-4. Pré-processamento
+4 . Feature Engineering
 
-5. Treinamento dos Modelos
+5. Divisão dos Dados
+ 
+6. Pré-processamento
 
-6. Avaliação e Validação
+7. Modelagem
+
+8. Avaliação Final
+
+9. Veredito Final
 
 ## Dicionário de Dados
 
