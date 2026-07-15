@@ -154,7 +154,6 @@ Sob a ótica do negócio, apresentou menor risco financeiro para a instituição
 
 Clone o repositório:
 
-```bash
 git clone <https://github.com/MayconValer/carreira-tec-machine-learning-projeto-final.git>
 
 Intale as dependencias:
@@ -172,9 +171,48 @@ Execute todas as células na ordem apresentada.
 
 # 13. Histórico do Projeto
 
-Esse item é um diferencial.
+## Status do desenvolvimento
 
-```markdown
+- [x] Coleta de dados
+- [x] Análise Exploratória de Dados
+- [x] Criação da base de trabalho
+- [x] Remoção de registros duplicados
+- [x] Reavaliação dos valores ausentes
+- [x] Imputação dos valores ausentes
+- [x] Tratamento de inconsistências
+- [x] Tratamento de outliers
+- [x] Feature Engineering
+- [x] Criação da variável `comprometimento_renda`
+- [x] Validação de divisão por zero
+- [x] Análise de redundância com `loan_percent_income`
+- [x]  Definição das variáveis preditoras
+- [x] Divisão estratificada dos dados
+- [x] Identificação das variáveis categóricas e numéricas
+- [x] One-Hot Encoding ajustado somente no treino
+- [x] Transformação segura do conjunto de teste
+- [x] One-Hot Encoding
+- [x] Balanceamento com SMOTE apenas no treino
+- [x] Preservação da distribuição original do teste
+- [x] Escalonamento seguro para KNN
+- [x] Base preparada para Árvore de Decisão
+- [x] Pré-processamento
+- [x] Início da Modelagem
+- [x] Primeiro treinamento do KNN
+- [x] Otimização do KNN
+- [x] Comparação entre diferentes valores de K
+- [x] Diagnóstico inicial de Overfitting
+- [x] Otimização do KNN
+- [x] Otimização da Árvore
+- [x] Diagnóstico de Overfitting
+- [x] Comparação entre modelos
+- [x] Seleção automática das melhores configurações
+- [x] Classification Report
+- [x] Matrizes de Confusão
+- [x] Interpretação dos erros
+- [x] Avaliação
+- [x] Veredito Executivo
+
+
 ## Versionamento
 
 O desenvolvimento foi realizado utilizando Git Flow simplificado.
