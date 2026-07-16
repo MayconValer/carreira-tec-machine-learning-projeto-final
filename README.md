@@ -83,7 +83,7 @@ O desenvolvimento seguiu o fluxo:
 
 3. Tratamento e Limpeza dos Dados
 
-4 . Feature Engineering
+4. Feature Engineering
 
 5. Divisão dos Dados
  
