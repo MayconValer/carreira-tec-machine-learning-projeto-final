@@ -250,12 +250,6 @@ Carreira Tech
 
 A apresentação completa do desenvolvimento do projeto pode ser assistida no YouTube:
 
-**Vídeo da apresentação:**
-
-## 🎥 Apresentação do Projeto
-
-A apresentação completa do desenvolvimento do projeto pode ser assistida no YouTube:
-
 Projeto Final — Machine Learning para Risco de Crédito | Maycon Valer
 
 https://youtu.be/UHqmH5g7rv8?si=Eroo0naWW7nn-GFW
